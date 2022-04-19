@@ -12,7 +12,7 @@ git clone https://github.com/trgilmore/health.git
 ```
 cd health
 ```
-* Be sure to change the rellative personal info in `index.js` to your own. NOTED in ALL CAPS.
+* Be sure to change the relative personal info in `index.js` to your own. NOTED in ALL CAPS.
 
 
 
@@ -29,7 +29,7 @@ npm install puppeteer
 
 ## Automation
 
-ScarletKnight310 used a Windows automation tool to automate the process, but if you have a Mac or Linux, you can use cronjobs to accomplish the same thing.
+ScarletKnight310 used a Windows automation tool to automate the process, but if you have a Mac or Linux, you can use cronjobs to accomplish the same thing. (This is set for every Monday at 10am through May, I recommend using https://crontab.guru/ to determine the correct cron syntax)
 
 ```
 crontab -e
