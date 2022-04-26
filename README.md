@@ -29,15 +29,17 @@ npm install puppeteer
 
 ## Automation
 
-ScarletKnight310 used a Windows automation tool to automate the process, but if you have a Mac or Linux, you can use cronjobs to accomplish the same thing. (This is set for every Monday at 10am through May, I recommend using https://crontab.guru/ to determine the correct cron syntax)
+#### Option 1
+ScarletKnight310 used a Windows automation tool to automate the process, but if you have a Mac or Linux, you can use cronjobs to accomplish the same thing. Use the script below, just determine the full PATH for node. (This is set for every Monday at 10am through May, I recommend using https://crontab.guru/ to determine the correct cron syntax)
 
 ```
 crontab -e
 ```
 
 ```
-0 10 * 4,5 1 cd /health && node index.js
+0 10 * 4,5 1 cd /health && {PATH}/node index.js
 ```
 
-Also I haven't tested it yet but could potentially be set up to run with github actions so not relient on your own machine. The only problem is that Github suspends Actions on repos that are not active for 60 days. Example of the action `yml` file [here](https://github.com/briangershon/github-actions-cron/blob/204b34209793d31273c106be322c956bbe5d1d20/.github/workflows/run-on-schedule.yml)
+#### Option 2?
+Also I haven't tested it yet but could potentially be set up to run with github actions so you would not be not relient on your own machine. The only problem is that Github suspends Actions on repos that are not active for 60 days. Example of the action `yml` file [here](https://github.com/briangershon/github-actions-cron/blob/204b34209793d31273c106be322c956bbe5d1d20/.github/workflows/run-on-schedule.yml)
 
