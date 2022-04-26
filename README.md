@@ -41,5 +41,5 @@ crontab -e
 ```
 
 #### Option 2?
-Also I haven't tested it yet but could potentially be set up to run with github actions so you would not be not relient on your own machine. The only problem is that Github suspends Actions on repos that are not active for 60 days. Example of the action `yml` file [here](https://github.com/briangershon/github-actions-cron/blob/204b34209793d31273c106be322c956bbe5d1d20/.github/workflows/run-on-schedule.yml)
+Also, I haven't tested it yet but this could potentially be set up to run with github actions so you would not be not relient on your own machine to be powered on. The only problem is that Github suspends Actions on repos that are not active for 60 days. Example of the action `yml` file [here](https://github.com/briangershon/github-actions-cron/blob/204b34209793d31273c106be322c956bbe5d1d20/.github/workflows/run-on-schedule.yml)
 
